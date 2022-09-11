@@ -1,0 +1,13 @@
+services:
+  whoami:
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/whoami/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/whoami
+    environment:
+      - WHOAMI_ENV=local
+      - WHOAMI_USERNAME=whoami
+      - WHOAMI_PASSWORD=whoami
