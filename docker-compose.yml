@@ -11,3 +11,11 @@ services:
       - WHOAMI_ENV=local
       - WHOAMI_USERNAME=whoami
       - WHOAMI_PASSWORD=whoami
+  front:
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/front/Dockerfile
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./front:/front

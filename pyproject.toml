@@ -2,7 +2,7 @@
 name = "whoami"
 version = "0.1.0"
 description = "personal website"
-authors = ["Calvin Spring <calvin@cardiologs.com>"]
+authors = [""]
 license = "MIT"
 
 [tool.poetry.dependencies]

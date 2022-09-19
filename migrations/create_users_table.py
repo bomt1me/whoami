@@ -7,7 +7,7 @@ from whoami import auth, config, db
 
 def headshot() -> str:
     with open(
-        os.path.join(config.WHOAMI_DIR, config.WHOAMI_ASSETS_DIR, "whoami_headshot.svg"),
+        os.path.join(config.WHOAMI_DIR, config.WHOAMI_ASSETS_DIR, "whoami_headshot.png"),
         "rb",
     ) as f:
         svg = f.read()

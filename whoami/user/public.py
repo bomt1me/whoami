@@ -28,7 +28,7 @@ async def headshot(request: starlette.requests.Request) -> Response:
 
     if user_headshot_str:
         user_headshot = base64.b64decode(user_headshot_str)
-        return StreamingResponse(io.BytesIO(user_headshot), media_type="image/svg+xml")
+        return StreamingResponse(io.BytesIO(user_headshot), media_type="image/png")
 
     return Response(content=b"not found", status_code=404, headers={}, media_type="text/plain")
 
